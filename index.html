@@ -1,0 +1,215 @@
+<html>
+<head>
+    <title>my portfolio</title>
+    <script type="text/javascript" src="js/portfoliojs.js"></script> 
+    <link rel="stylesheet" type="text/css" href="css/portfoliostyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="name" content="debopriyo dey's Portal">
+
+
+</head>
+<body>
+    <div class="header">
+        <img src="img/dp.jpeg" alt="profile pic">
+        <h1> DEBOPRIYA DEY </h1>
+        <h2> PORTFOLIO</h2>
+        <p></p>
+    </div>
+    <!--<div class="move"></div>-->
+    <div class="nav-bar" id="mynav">
+            <a href="#home" class="active"> HOME </a>
+            <a href="#achivements"> ACHIVEMENTS </a>
+            <a href="#credentials"> CREADENTIALS </a>
+            <div class="dropdown">
+                <a href="#dropdown"> REFERENCE </a>
+                <div class="dropdown-content">
+                    <a href="#link1">Link 1</a>
+                    <a href="#link2">Link 2</a>
+                    <a href="#link3">Link 3</a>
+                </div>
+            </div>
+            <a href="#contact"> CONTACTS </a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="openNav()"> &#9776; </a>
+        <a href="javascript:void(0);" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+<div id="myNav1" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+    <div class="overlay-content">
+      <!--<a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>-->
+      <a href="#home" class="active" onclick="closeNav()"> HOME </a>
+      <a href="#achivements" onclick="closeNav()"> ACHIVEMENTS </a>
+      <a href="#credentials"  onclick="closeNav()"> CREADENTIALS </a>
+        <div class="over-drop">
+              <a href="#dropdown" onclick="closeNav()"> REFERENCE </a>
+              <div class="over-drop-cont">
+                  <a href="#link1" onclick="closeNav()">Link 1</a>
+                  <a href="#link2" onclick="closeNav()">Link 2</a>
+                  <a href="#link3" onclick="closeNav()">Link 3</a>
+              </div>
+          </div>
+          <a href="#contact" onclick="closeNav()"> CONTACTS </a>
+    </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()" class="open">&#9776; </span>
+
+    <div>
+        <hr>
+        <a name="home"></a>
+            <div class="home1">
+                <div class="container1">
+                    <img src="img/home.jpeg" alt="Notebook" style="width:100%;">
+                    <div class="content1">
+                      <h1>Heading</h1>
+                      <p>write something .write something .write something .write something .write something .write something .write something .write something .write something .</p>
+                    </div>
+                </div>
+                <div class="about">
+                    <p><h4>head</h4></p>
+                    <p> this is a para</p>
+                    <p> this is a para</p>
+                    <p><h4>head</h4></p>
+                    <p> this is a para</p>
+                    <p> this is a para</p>
+                    <p><h4>head</h4></p>
+                    <p> this is a para</p>
+                    <p> this is a para</p>
+                </div>
+            </div>
+        <hr>
+        <a name="achivements"> ACH </a>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <hr>
+        <a name="credentials"> CRE </a>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <hr>
+        <a name="dropdown"> <h3> WORK REFERENCES </h3> </a>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <p> this is a para</p>
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <!--<img src="/w3images/team1.jpg" alt="Jane" style="width:100%">-->
+                <div class="container">
+                  <a name="link1"></a>
+                  <h2>Jane Doe</h2>
+                  <p class="title">CEO & Founder</p>
+                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                  <a href="mailto:eaxample@example.com" class="email"  id="email">example@example.com</a>
+                  <p><button class="button">Contact</button></p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                  <!--<img src="/w3images/team2.jpg" alt="Mike" style="width:100%">-->
+                  <div class="container">
+                    <a name="link2"></a>
+                    <h2>Mike Ross</h2>
+                    <p class="title">Art Director</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <a href="mailto:eaxample@example.com" class="email"  id="email">example@example.com</a>
+                    <p><button class="button">Contact</button></p>
+                  </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                  <!--<img src="/w3images/team2.jpg" alt="Mike" style="width:100%">-->
+                  <div class="container">
+                    <a name="link3"> </a>
+                    <h2>Mike Ross</h2>
+                    <p class="title">Art Director</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <a href="mailto:eaxample@example.com" class="email" id="email">example@example.com</a>
+                    <p><button class="button">Contact</button></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //When the user scrolls the page, execute myFunction
+        window.onscroll = function() {stickynav()};
+        
+        //Get the navbar
+        var navbar = document.getElementById("mynav");
+        var navbar2 = document.getElementById("mynav1");
+        
+        
+        //Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+        
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function stickynav()
+        {
+          if (window.pageYOffset >= sticky)
+          {
+            navbar.classList.add("sticky");
+            navbar2.classList.add("sticky");
+          }
+          else
+          {
+            navbar.classList.remove("sticky");
+            navbar2.classList.remove("sticky");
+          }
+        }
+
+    </script>
+           
+
+</body>
+<footer>
+    <a name="contact"></a>
+    <p> THANKS FOR VISITING </p>
+        <br>
+        EMAIL: <a href="mailto:example@example.com" class="email">example@example.com</a>
+        <br>
+        <br>
+        <br>
+        <p> GET CONNECTED</p>
+        <br>
+        <br>
+        <div class="connect">
+              <a href="#"><i class="fa fa-facebook-square"></i></a>   |
+              
+              <a href="#"><i class="fa fa-twitter-square"></i></a>   |
+              
+              <a href="#"><i class="fa fa-instagram"></i></a>   |
+              
+              <a href="#"><i class="fa fa-linkedin-square"></i></a>   |
+              
+              <a href="#"><i class="fa fa-github-square"></i></a>
+        </div>
+
+</footer>
+</html>
