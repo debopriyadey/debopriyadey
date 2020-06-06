@@ -348,6 +348,7 @@ footer > a:hover, footer > a:focus{
   .header{
     background-image: url("../img/cover2.jpg");
     background-size: cover;
+    background-position:center; 
     height: 100%;
     opacity: 0.6;
   }
@@ -522,10 +523,13 @@ footer > a:hover, footer > a:focus{
    display: unset;
  }
  
+ .container1 {
+  margin: 0 auto;
+ }
+ 
  .about
  {
-  margin-left: auto;
-  margin-top: -100px;
+  margin: 0 auto;
   line-height: 0px;
   display: grid;
   justify-content: center;
