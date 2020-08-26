@@ -1,6 +1,4 @@
-﻿body
-{
-}
+﻿
 
 header {
     background-image: url("../img/cover.jpg");
@@ -10,6 +8,7 @@ header {
     height: 90vh;
     padding: 20px;
 }
+
 
 /* Style the links inside the sidenav */
 #mySidenav a {
@@ -30,22 +29,22 @@ header {
 }
 
 /* The about link: 20px from the top with a green background */
-#about {
+#github {
   top: 30%;
   background-color: #4CAF50;
 }
 
-#blog {
+#linkedin {
   top: 40%;
   background-color: #2196F3; /* Blue */
 }
 
-#projects {
+#twitter {
   top: 50%;
   background-color: #f44336; /* Red */
 }
 
-#contact {
+#dev {
   top: 60%;
   background-color: #555 /* Light Black */
 }
@@ -74,49 +73,111 @@ header {
 }
 
 .projectwrap {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
+.nav-btn{
+    display:none;
+}
 
 @media(max-width:1080px) {
     .projectwrap {
-        flex-wrap: wrap;
-        
+        flex-wrap: nowrap;
+    }
+    .nav-btn {
+        display:flex;
+    }
+}
+
+.container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+    .container .card .face.face1 {
+        position: relative;
+        background: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transform: translateY(100px);
+    }
+
+
+@media(hover: hover) and (pointer: fine) {
+
+    .container .card:hover .face.face1 {
+        background: #ff0057;
+        transform: translateY(0);
     }
 }
 
 
-/*.aboutMeCardAppear {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+.container .card .face.face1 .content {
+    opacity: 0.2;
+    transition: 0.5s;
 }
 
-.aboutMeCard {
-    margin: 0 auto;
-    margin-top: 0px;
-    max-width: calc(1140px - 30px);
-    background: #808080;
-    margin-top: -100px;
+
+@media(hover: hover) and (pointer: fine) {
+    .container .card:hover .face.face1 .content {
+        opacity: 1;
+    }
+}
+
+
+.container .card .face.face1 .content img {
+    max-width: 100px;
+}
+
+.container .card .face.face1 .content h3 {
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2 {
     position: relative;
-    width: 95%;
-    opacity: 0.8;
-    visibility: visible;
-    border-radius: 5px;
-    -webkit-transition: 0.5s all ease-in-out;
-    transition: 0.5s all ease-in-out;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    padding: 5%;
-    max-width: 950px;
-    -webkit-box-shadow: 0px 10px 20px #cacaca;
-    box-shadow: 0px 10px 20px #cacaca;
-    margin-bottom: 10%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
 }
 
-.wrapper {
-    max-width: 1300px;
-    margin: 0 auto;
-    width: 80%;
-}*/
+@media(hover: hover) and (pointer: fine) {
+    .container .card:hover .face.face2 {
+        transform: translateY(0);
+    }
+}
+
+.container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face2 .content a {
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .container .card .face.face2 .content a:hover {
+        background: #333;
+        color: #fff;
+    }
+}
+
+
