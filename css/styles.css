@@ -9,6 +9,9 @@ header {
     padding: 20px;
 }
 
+a {
+    text-decoration: none;
+}
 
 /* Style the links inside the sidenav */
 #mySidenav a {
@@ -109,14 +112,14 @@ header {
 @media(hover: hover) and (pointer: fine) {
 
     .container .card:hover .face.face1 {
-        background: #ff0057;
+        background: #007bff;
         transform: translateY(0);
     }
 }
 
 
 .container .card .face.face1 .content {
-    opacity: 0.2;
+    opacity: 0.6;
     transition: 0.5s;
 }
 
@@ -129,7 +132,8 @@ header {
 
 
 .container .card .face.face1 .content img {
-    max-width: 100px;
+    max-height: 150px;
+    max-width: 300px;
 }
 
 .container .card .face.face1 .content h3 {
@@ -180,4 +184,12 @@ header {
     }
 }
 
+#myBottomLink {
+    visibility:hidden;
+}
 
+@media(max-width:720px) {
+    #myBottomLink{
+        visibility: visible;
+    }
+}
