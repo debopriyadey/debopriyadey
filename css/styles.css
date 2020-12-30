@@ -11,12 +11,12 @@ a {
         color: inherit;
     }
 
-h2 {
+.sec-header {
     font-weight: 300;
     position: relative;
 }
 
-    h2:before {
+    .sec-header:before {
         content: "";
         position: absolute;
         width: 8%;
