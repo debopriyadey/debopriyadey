@@ -14,161 +14,121 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script type="application/x-javascript" src="js/index.js"></script>
+    <script type="application/x-javascript" src="js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <title> Debopriya Dey</title>
 
+
+    <!-- smooth scroll-->
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script><!-- smooth scroll ends-->
+
 </head>
 <body>
-    <header style="z-index:2">
-        <div style="background-color:black;">
-            <h1 class="text-center" style="color:aliceblue"> <strong>UNDER CONSTRUCTION</strong></h1>
-        </div>
-        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark w3-hover-black" style="opacity:0.6">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse px-5" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mt-2 mt-lg-0 justify-content-start" style="margin:0 auto;">
-                    <li class="nav-item"><a class="nav-link" href="#home" style="border-right:double;">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about" style="border-right:double;">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects" style="border-right:double;">PROJECTS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blogs" style="border-right:double;">BLOGS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div id="mySidenav" class="sidenav">
-            <a href="https://github.com/debopriyadey" target="_blank" id="github"><i class="fab fa-github fa-3x"></i></a>
-            <a href="https://linkedin.com/in/debopriya-dey-40b892191" target="_blank" id="linkedin"><i class="fab fa-linkedin fa-3x"></i></a>
-            <a href="https://twitter.com/creativechaos_8" target="_blank" id="twitter"><i class="fab fa-twitter fa-3x"></i></a>
-            <a href="https://dev.to/debopriyadey" target="_blank" id="dev"><i class="fab fa-dev fa-3x"></i></a>
-        </div>
-        <div id="heading1" style="left: 20%; top: 40%; margin:0 auto;">
-            <p style="color:white" id="heading2"> <h1>My name is Debopriya Dey</h1><br /><h3> i am web devloper </h3> </></em></p>
-        </div>
-    </header>
 
-    <!-- ABOUT -->
-    <a id="about"></a>
-    <section class="p-5">
-        <div class="card border border-dark mb-3 p-5" style="max-width: 900px; margin: 0 auto; border:2px; box-shadow: inset 0px 1px 16px 0px #080808;">
-            <span class="text-center"><h1> knock, knock.</h1><h3><em>Who's there?</em></h3></span>
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="img/dp.jpeg" class="card-img" alt="profile pic" style=" box-shadow: 2px 3px 7px 0px #0d0e27; ">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <p class="card-text">DEBOPRIYA DEY. A web developer</p>
-                        <button class="btn btn-outline-dark">
-                            <a href="about.html" target="_blank">know more</a>
-                        </button>
+    <!-- header starts -->
+    <div class="row header" id="header">
+        <div class="col-md-12 col-lg-7" style="background-color:black; color: white;">
+            <div class="container">
+                <!-- navigation bar -->
+                <nav class="navbar navbar-expand-sm navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse px-5" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav" style="margin:0 auto;">
+                            <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#blogs">BLOGS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </nav><!-- navigation end -->
+                <div class="row block-1">
+                    <div class="col-12">
+                        <!-- about me -->
+                        <h1>Let us solve <br> human's problems</h1>
+                        <p>I learned that design matters – because we are human and we often enter into problems.My vision is to empower people with easy and productive solutions to get the best out of them.</p>
+                        <br />
+                        <!-- social media links -->
+                        <div id="myBottomLink" class="text-left pb-3">
+                            <a href="https://github.com/debopriyadey" target="_blank" id="githubBottom"><i class="fab fa-github fa-2x"></i></a>
+                            <a href="https://linkedin.com/in/debopriya-dey-40b892191" target="_blank" id="linkedinBottom"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="https://twitter.com/creativechaos_8" target="_blank" id="twitterBottom"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="https://dev.to/debopriyadey" target="_blank" id="devBottom"><i class="fab fa-dev fa-2x"></i></a>
+                        </div>
+                        <!-- button link to about page -->
+                        <a href="about.html">
+                            <button type="button" class="btn btn-outline-light my-3"> Know Me More</button>
+                        </a>
                     </div>
                 </div>
+                <!-- down arrow -->
+                <a href="#projects"><i class="fas fa-arrow-alt-circle-down fa-3x mx-4 mb-4"></i></a>
+
             </div>
         </div>
-    </section>
+        <div class="col-md-0 col-lg-5 topimage">
+            <!-- background image -->
 
+        </div>
+    </div><!-- header ends -->
 
     <!-- MY PROJECTS -->
-    <a id="projects"></a>
-    <section style="background-color: #2f2a2a;">
+    <section class="" id="projects" style="background-color: #007bff;">
         <h2 class="text-center" style="color:aliceblue;"> MY PROJECTS </h2>
-        <!--<i class="nav-btn far fa-arrow-alt-circle-left fa-3x"></i>-->
-        <div class="container py-5 project" style="overflow-x:scroll;">
-            <div class="row projectwrap">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <div class="face face1">
-                                <div class="content">
-                                    <img src="img/proj3.png">
-                                    <h3>TRIBUTE PAGE</h3>
-                                </div>
-                            </div>
-                            <div class="face face2">
-                                <div class="content">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                                    <a href="https://codepen.io/creativechoas_8/full/PoNqRxG" target="_blank">Read More</a>
-                                </div>
-                            </div>
-                        </div>
+        <div class="container py-5 projects">
+            <div class="card-columns">
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="img/proj3.png" alt="Card image">
+                    <div class="card-img-overlay text">
+                        <h5 class="card-title">TRIBUTE PAGE</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="https://codepen.io/creativechoas_8/full/PoNqRxG" target="_blank">Read More</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <div class="face face1">
-                                <div class="content">
-                                    <img src="img/proj1.png">
-                                    <h3>PRODUCT LANDING PAGE</h3>
-                                </div>
-                            </div>
-                            <div class="face face2">
-                                <div class="content">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                                    <a href="https://codepen.io/creativechoas_8/full/vYGNWEQ" target="_blank">Read More</a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="img/proj1.png" alt="Card image">
+                    <div class="card-img-overlay text">
+                        <h5 class="card-title">PRODUCT LANDING PAGE</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="https://codepen.io/creativechoas_8/full/vYGNWEQ" target="_blank">Read More</a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <div class="face face1">
-                                <div class="content">
-                                    <img src="img/proj2.png">
-                                    <h3>SURVEY FORM</h3>
-                                </div>
-                            </div>
-                            <div class="face face2">
-                                <div class="content">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                                    <a href="https://codepen.io/creativechoas_8/full/QWNjZoW" target="_blank">Read More</a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="img/proj2.png" alt="Card image">
+                    <div class="card-img-overlay text">
+                        <h5 class="card-title">SURVEY FORM</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="https://codepen.io/creativechoas_8/full/QWNjZoW" target="_blank">Read More</a>
                     </div>
                 </div>
-                <!--<div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <div class="face face1">
-                                <div class="content">
-                                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
-                                    <h3>Launch</h3>
-                                </div>
-                            </div>
-                            <div class="face face2">
-                                <div class="content">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <div class="face face1">
-                                <div class="content">
-                                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
-                                    <h3>Launch</h3>
-                                </div>
-                            </div>
-                            <div class="face face2">
-                                <div class="content">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                                    <a href="#">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
             </div>
         </div>
     </section>
@@ -250,56 +210,69 @@
 
     <!-- CONTACT -->
     <a id="contact"></a>
-    <footer style="background-color: #333; ">
-        <section class="mb-4" style="background-color: #007bff;">
-            <div class="view">
-                <!-- Mask & flexbox options-->
-                <div class="mask rgba-gradient align-items-center">
-                    <div class="container-sm">
-                        <div class="row">
-                            <!--Grid column-->
-                            <div class="col-md-6 col-xl-5 my-4" style="opacity:0.8; margin:0 auto;">
-                                <!--Form-->
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <!--Header-->
-                                        <div class="text-center">
-                                            <h2 class="white-text">
-                                                <i class="far fa-handshake white-text"></i> Get In Touch:
-                                            </h2>
-                                            <hr>
-                                        </div>
-                                        <!--Body-->
-                                        <div class="form-group">
-                                            <i class="fa fa-user white-text active"></i>
-                                            <label for="name"> Your Name </label>
-                                            <input class="form-control" type="text" name="name" id="name" placeholder="Name">
-                                        </div>
-                                        <div class="form-group">
-                                            <i class="fa fa-envelope prefix white-text active"></i>
-                                            <label for="eamil" class="active">Your Email</label>
-                                            <input type="email" id="email" class="white-text form-control" placeholder="example@example.com">
-                                        </div>
-                                        <div>
-                                            <i class="far fa-comment-alt prefix white-text active"></i>
-                                            <label for="message" class="active"> Message </label>
-                                            <textarea class="form-control" placeholder="Type your message"></textarea>
-                                        </div>
-                                        <div class="text-center mt-4">
-                                            <button class="btn btn-outline-dark" onclick="formvalidation()"> SEND </button>
-                                            <hr class="mb-3 mt-4">
-                                        </div>
-                                    </div>
-                                </div>
+    <section class="" style="background-color: #007bff;">
+        <div class="container-sm my-2">
+            <div class="row contact">
+                <!-- work together desc -->
+                <div class="col-md-6 mx-auto my-5 white-text text-center text-md-left">
+                    <h1>Let us solve <br> human's problems</h1>
+                    <p>I learned that design matters – because we are human and we often enter into problems.My vision is to empower people with easy and productive solutions to get the best out of them.</p>
+                    <br />
+                </div><!-- Work desc ends -->
+                <!-- form start -->
+                <div class="col-md-6 col-xl-5 my-2 justify-content-center" style="opacity:0.6;">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <!--Header-->
+                            <div class="text-center">
+                                <h2 class="white-text">
+                                    <i class="far fa-handshake white-text"></i> Get In Touch:
+                                </h2>
+                                <hr>
+                            </div>
+                            <!--Body-->
+                            <div class="form-group">
+                                <i class="fa fa-user white-text active"></i>
+                                <label for="name"> Your Name </label>
+                                <input class="form-control" type="text" name="name" id="name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <i class="fa fa-envelope prefix white-text active"></i>
+                                <label for="eamil" class="active">Your Email</label>
+                                <input type="email" id="email" class="white-text form-control" placeholder="example@example.com">
+                            </div>
+                            <div>
+                                <i class="far fa-comment-alt prefix white-text active"></i>
+                                <label for="message" class="active"> Message </label>
+                                <textarea class="form-control" placeholder="Type your message"></textarea>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button class="btn btn-outline-dark" onclick="formvalidation()"> SEND </button>
+                                <hr class="mb-3 mt-4">
                             </div>
                         </div>
                     </div>
-                </div>
+                </div><!-- form ends-->
             </div>
-        </section>
-        <hr style="color:aliceblue" />
-        <h5 class="text-center p-4" style="color:aliceblue">&copy; created by creativechaos_8 </h5>
-        <div id="myBottomLink" class="text-center pb-4">
+        </div>
+    </section>    <!-- contact ends-->
+    <!-- find me add and email -->
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+
+            </div>
+            <div class="col-6">
+
+            </div>
+        </div>
+    </div><!-- find me ends -->
+    <!-- back-to-top button -->
+    <a href="#header" class="back-to-top back-appear" style="float: right; color:blue;"><i class="fas fa-arrow-alt-circle-up fa-3x mx-4 mb-4"></i></a>
+
+    <footer style="background-color:black; ">
+        <h5 class="text-center pb-1" style="color:aliceblue">&copy; created by creativechaos_8 </h5>
+        <div id="myBottomLink" class="text-center pb-3" style="color:white;">
             <a href="https://github.com/debopriyadey" target="_blank" id="githubBottom"><i class="fab fa-github fa-2x"></i></a>
             <a href="https://linkedin.com/in/debopriya-dey-40b892191" target="_blank" id="linkedinBottom"><i class="fab fa-linkedin fa-2x"></i></a>
             <a href="https://twitter.com/creativechaos_8" target="_blank" id="twitterBottom"><i class="fab fa-twitter fa-2x"></i></a>

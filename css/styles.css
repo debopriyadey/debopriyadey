@@ -1,82 +1,52 @@
-﻿
+﻿.header {
+    height: 750px;
+}
 
-header {
+    .header .block-1 {
+        align-items: center;
+        display: flex;
+        float: left;
+        height: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+        .header .block-1 h1 {
+            font-family: 'Montserrat', serif;
+            font-size: 3.9rem;
+            font-weight: 700;
+            line-height: 1.1;
+            text-transform: capitalize;
+            margin: 0 auto;
+        }
+
+        .header .block-1 p {
+            font-size: 1.40rem;
+            font-weight: 500;
+            letter-spacing: .2px;
+            line-height: 1.8;
+            margin: 0 auto;
+        }
+
+.topimage {
     background-image: url("../img/cover.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 90vh;
-    padding: 20px;
+    background-position: center;
+    float: right;
+    height: 100%;
+    width: 41%;
+}
+
+@media screen and (max-width: 990px) {
+    .topimage {
+        display: none;
+    }
 }
 
 a {
     text-decoration: none;
-}
-
-/* Style the links inside the sidenav */
-#mySidenav a {
-    position: fixed; /* Position them relative to the browser window */
-    left: -25px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
-    padding: 15px; /* 15px padding */
-    width: 100px; /* Set a specific width */
-    text-decoration: none; /* Remove underline */
-    font-size: 15px; /* Increase font size */
-    color: white; /* White text color */
-    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-    text-align: end;
-}
-
-#mySidenav a:hover {
-  left: 0; /* On mouse-over, make the elements appear as they should */
-}
-
-/* The about link: 20px from the top with a green background */
-#github {
-  top: 30%;
-  background-color: #4CAF50;
-}
-
-#linkedin {
-  top: 40%;
-  background-color: #2196F3; /* Blue */
-}
-
-#twitter {
-  top: 50%;
-  background-color: #f44336; /* Red */
-}
-
-#dev {
-  top: 60%;
-  background-color: #555 /* Light Black */
-}
-
-@media(max-width:720px){
-    #mySidenav{
-        display:none;
-    }
-}
-
-#heading1 {
-    position: absolute; /* Position them relative to the browser window */
-    padding: 15px; /* 15px padding */
-    color: white; /* White text color */
-    text-align: start;
-}
-
-.project::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.project {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
-
-.projectwrap {
-    flex-wrap: wrap;
 }
 
 .nav-btn{
@@ -84,104 +54,20 @@ a {
 }
 
 @media(max-width:1080px) {
-    .projectwrap {
-        flex-wrap: nowrap;
-    }
     .nav-btn {
         display:flex;
     }
 }
 
-.container .card .face {
-    width: 310px;
-    height: 200px;
-    transition: 0.5s;
+/* -------- back to top btn ----------- */
+.back-to-top {
+    position: fixed;
+    top: 650px;
+    right: 10px;
 }
 
-    .container .card .face.face1 {
-        position: relative;
-        background: #333;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1;
-        transform: translateY(100px);
-    }
-
-
-@media(hover: hover) and (pointer: fine) {
-
-    .container .card:hover .face.face1 {
-        background: #007bff;
-        transform: translateY(0);
-    }
-}
-
-
-.container .card .face.face1 .content {
-    opacity: 0.6;
-    transition: 0.5s;
-}
-
-
-@media(hover: hover) and (pointer: fine) {
-    .container .card:hover .face.face1 .content {
-        opacity: 1;
-    }
-}
-
-
-.container .card .face.face1 .content img {
-    max-height: 150px;
-    max-width: 310px;
-}
-
-.container .card .face.face1 .content h3 {
-    margin: 10px 0 0;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.container .card .face.face2 {
-    position: relative;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    transform: translateY(-100px);
-}
-
-@media(hover: hover) and (pointer: fine) {
-    .container .card:hover .face.face2 {
-        transform: translateY(0);
-    }
-}
-
-.container .card .face.face2 .content p {
-    margin: 0;
-    padding: 0;
-}
-
-.container .card .face.face2 .content a {
-    margin: 15px 0 0;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 900;
-    color: #333;
-    padding: 5px;
-    border: 1px solid #333;
-}
-
-@media(hover: hover) and (pointer: fine) {
-    .container .card .face.face2 .content a:hover {
-        background: #333;
-        color: #fff;
-    }
+.back-appear {
+    opacity: 0;
 }
 
 #myBottomLink .a {
@@ -201,15 +87,4 @@ a {
     border: solid 2px #fff;
     color: $fargglad;
     background: #fff;
-}
-
-
-#myBottomLink {
-    visibility:hidden;
-}
-
-@media(max-width:720px) {
-    #myBottomLink{
-        visibility: visible;
-    }
 }
