@@ -1,4 +1,33 @@
-﻿.header {
+﻿body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+
+h2 {
+    font-weight: 300;
+    position: relative;
+}
+
+    h2:before {
+        content: "";
+        position: absolute;
+        width: 8%;
+        height: 1px;
+        bottom: 0;
+        left: 46%;
+        border-bottom: 5px solid black;
+    }
+
+/* ---------- header style ----------- */
+.header {
     height: 750px;
 }
 
@@ -28,6 +57,7 @@
             margin: 0 auto;
         }
 
+/* ---------- topimage style ----------- */
 .topimage {
     background-image: url("../img/cover.jpg");
     background-size: cover;
@@ -39,23 +69,9 @@
     width: 41%;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 990px) { 
     .topimage {
         display: none;
-    }
-}
-
-a {
-    text-decoration: none;
-}
-
-.nav-btn{
-    display:none;
-}
-
-@media(max-width:1080px) {
-    .nav-btn {
-        display:flex;
     }
 }
 
@@ -68,6 +84,20 @@ a {
 
 .back-appear {
     opacity: 0;
+}
+
+/* ---------- projects style ----------- */
+
+/* ---------- projrcts ends ------------ */
+
+.nav-btn{
+    display:none;
+}
+
+@media(max-width:1080px) {
+    .nav-btn {
+        display:flex;
+    }
 }
 
 #myBottomLink .a {
