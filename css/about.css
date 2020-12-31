@@ -1,7 +1,7 @@
 ﻿/* Sidebar */
 #sidebar-wrapper {
     z-index: 1;
-    position: absolute;
+    position: fixed;
     width: 0;
     height: 100vh;
     overflow-y: hidden;
@@ -24,7 +24,8 @@
     transition: all .3s;
     font-size: 2em;
 }
-/* Change the width of the sidebar to display it*/
+
+/* Change the width of the sidebar to display it */
 #wrapper.menuDisplayed #sidebar-wrapper {
     width: 250px;
 }
@@ -34,7 +35,14 @@
 }
 
 /* Sidebar styling */
+img {
+    width: inherit;
+    border-radius: 50%;
+    padding: 10px;
+}
+
 .sidebar-nav {
+    position: absolute;
     padding: 0;
     list-style: none;
     transition: all .5s;
