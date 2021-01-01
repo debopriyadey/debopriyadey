@@ -1,9 +1,7 @@
-
-
-//make the about vissible 
+//make the back-to-top vissible 
 
 function scrollAppear() {
-    var projects = document.querySelector('.projects');
+    var projects = document.querySelector('.blogs');
     var backToTop = document.querySelector('.back-to-top');
     var projectsPosition = projects.getBoundingClientRect().top;
     var screenPosition = window.innerHeight;
@@ -17,4 +15,3 @@ function scrollAppear() {
 }
 
 window.addEventListener('scroll', scrollAppear);
-

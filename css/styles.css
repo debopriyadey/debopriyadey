@@ -11,9 +11,12 @@ a {
         color: inherit;
     }
 
+/* ---------- each section header style with underline ----------- */
+
 .sec-header {
     font-weight: 300;
     position: relative;
+    color: aliceblue;
 }
 
     .sec-header:before {
@@ -23,12 +26,26 @@ a {
         height: 1px;
         bottom: 0;
         left: 46%;
-        border-bottom: 5px solid black;
+        border-bottom: 5px solid white;
+    }
+
+/* ---------- card styling ----------- */
+.card {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
     }
 
 /* ---------- header style ----------- */
 .header {
     height: 750px;
+    background-color: black;
+    background: linear-gradient(#171534, black);
+    color: white;
 }
 
     .header .block-1 {
@@ -55,6 +72,10 @@ a {
             letter-spacing: .2px;
             line-height: 1.8;
             margin: 0 auto;
+        }
+
+        .header a:hover {
+            color: dodgerblue;
         }
 
 /* ---------- topimage style ----------- */
@@ -87,8 +108,55 @@ a {
 }
 
 /* ---------- projects style ----------- */
+.projects {
+    overflow-y: hidden;
+    background-color: #007bff;
+    background: linear-gradient(black, #007bff, white);
 
-/* ---------- projrcts ends ------------ */
+}
+/* ---------- projects ends ------------ */
+
+/* ---------- blogs style ----------- */
+.blogs .sec-header:before {
+    border-bottom: 5px solid black;
+}
+/* ---------- blogs ends ----------- */
+
+
+/* ---------- contact style ------------ */
+.contact {
+    background-color: #007bff;
+    background: linear-gradient(white, #007bff, black);
+}
+
+.contact .block-1 {
+    align-items: center;
+    display: flex;
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    font-family: 'Californian FB', serif;
+    font-size: 3.0rem;
+    font-weight: 600;
+    line-height: 1.1;
+    text-transform: capitalize;
+    margin: 0 auto;
+}
+
+.contact h4 {
+    color: #191824;
+    font-weight: 600;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 auto;
+    color: white;
+}
 
 .nav-btn{
     display:none;
@@ -100,21 +168,10 @@ a {
     }
 }
 
-#myBottomLink .a {
-    color: #fff;
-    border: solid 2px #fff;
-    border-radius: 50%;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 48px;
-    transition: all .3s ease-in-out;
+.footer {
+    overflow-y: hidden;
 }
 
-#myBottomLink .a:hover {
-    border: solid 2px #fff;
-    color: $fargglad;
-    background: #fff;
-}
+    .footer a:hover {
+        color: dodgerblue;
+    }
