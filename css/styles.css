@@ -158,16 +158,6 @@ a {
     color: white;
 }
 
-.nav-btn{
-    display:none;
-}
-
-@media(max-width:1080px) {
-    .nav-btn {
-        display:flex;
-    }
-}
-
 .footer {
     overflow-y: hidden;
 }
