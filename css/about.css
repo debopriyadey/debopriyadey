@@ -6,7 +6,6 @@
     background-position: center;
 }
 
-
 /* Sidebar */
 #sidebar-wrapper {
     z-index: 1;
@@ -158,7 +157,6 @@
     }
 }
 
-
 .education {
     align-items: center;
     display: flex;
@@ -177,6 +175,11 @@
 .experience {
     background-color: black;
 }
+
+.achivements .block {
+    align-items: center;
+}
+
 /* hobbies styling */
 .hobbies {
     background: black;
