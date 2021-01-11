@@ -157,6 +157,7 @@
     }
 }
 
+/* education styling */
 .education {
     align-items: center;
     display: flex;
@@ -166,18 +167,44 @@
     color: white;
 }
 
+/* skills styling */
 @media screen and (max-width: 1200px) {
     .skills img {
         display: none;
     }
 }
 
+.skills ul li {
+    display: inline;
+    padding: 10px;
+}
+
+    .skills ul li::before {
+        content: "•";
+        color: yellow;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em
+    }
+
+/* experience styling */
 .experience {
     background-color: black;
 }
 
+/* achivements styling */
 .achivements .block {
-    align-items: center;
+    align-items: start;
+    padding: 10px 0px 10px 0px;
+}
+
+.achivements .block p{
+    padding-top: 6px ;
+}
+
+.achivements a:hover {
+    text-decoration: none;
+    opacity: 0.6;
 }
 
 /* hobbies styling */
