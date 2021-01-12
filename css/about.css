@@ -296,3 +296,8 @@
     opacity: 0.8;
     color: white;
 }
+
+.contact h4{
+    color: darkred;
+    font-weight: bold;
+}
