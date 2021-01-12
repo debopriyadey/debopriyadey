@@ -158,6 +158,13 @@ a {
     color: white;
 }
 
+.contact img {
+    width: 100%;
+    height: 80%;
+}
+
+/* ---------- footer style ------------ */
+
 .footer {
     overflow-y: hidden;
 }
