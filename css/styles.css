@@ -4,6 +4,7 @@
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
     a:hover {
@@ -14,7 +15,7 @@ a {
 /* ---------- each section header style with underline ----------- */
 
 .sec-header {
-    font-weight: 300;
+    font-weight: 200;
     position: relative;
     color: aliceblue;
 }
@@ -146,13 +147,14 @@ a {
     margin: 0 auto;
 }
 
-.contact h4 {
+.contact h3 {
+    font-size: 1.5rem;
     color: #191824;
-    font-weight: 600;
+    font-weight: 550;
 }
 
 .contact p {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     font-weight: 500;
     margin: 0 auto;
     color: white;

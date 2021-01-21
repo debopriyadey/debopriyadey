@@ -4,7 +4,19 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    overflow-x: hidden;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+
 
 /* Sidebar */
 #sidebar-wrapper {
@@ -49,6 +61,7 @@
 @media screen and (max-width: 560px){
     #wrapper.menuDisplayed #sidebar-wrapper {
         width: 100vw;
+        height: 100vh;
     }
 }
 
@@ -131,12 +144,13 @@
         color:white;
     }
 
-    .home .block-1 p {
+    .home p {
         font-size: 1.20rem;
         font-weight: 500;
         letter-spacing: .2px;
         line-height: 1.8;
-        margin: 0 auto;
+        margin: 0 20% 0 20%;
+        color: white;
     }
 
     .home a {
@@ -154,6 +168,10 @@
 
     .home h1 {
         font-size: 2.2rem;
+    }
+
+    .home p{
+        margin: 0 auto;
     }
 }
 
@@ -297,7 +315,16 @@
     color: white;
 }
 
-.contact h4{
-    color: darkred;
-    font-weight: bold;
+
+.contact h3 {
+    font-size: 1.5rem;
+    color: #d41a49;
+    font-weight: 550;
+}
+
+.contact p {
+    font-size: 1.0rem;
+    font-weight: 500;
+    margin: 0 auto;
+    color: white;
 }

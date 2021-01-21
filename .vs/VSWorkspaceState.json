@@ -2,7 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\img",
-    "\\img\\achivements"
+    "\\img\\achivements",
+    "\\img\\experience",
+    "\\img\\hobbies",
+    "\\js"
   ],
+  "SelectedNode": "\\img\\proj1.png",
   "PreviewInSolutionExplorer": false
 }
