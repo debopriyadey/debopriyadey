@@ -185,12 +185,18 @@ a {
     }
 
 @media screen and (max-width: 780px){
+    .home {
+        height: inherit;
+        margin-top: 100px;
+
+    }
+
     .home img {
         width: 40%;
     }
 
     .home h1 {
-        font-size: 2.2rem;
+        font-size: 2.0rem;
     }
 
     .home p{
