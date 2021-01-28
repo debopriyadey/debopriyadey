@@ -52,6 +52,8 @@ a {
     background-color: black;
     background: linear-gradient(#171534, black);
     color: white;
+    margin-right: 0;
+    margin-left: 0;
 }
 
     .header .block-1 {
