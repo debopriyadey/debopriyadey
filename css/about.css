@@ -17,6 +17,9 @@ a {
         color: inherit;
     }
 
+.highlight {
+    color: #cc0000;
+}
 
 /* Sidebar */
 #sidebar-wrapper {
@@ -60,8 +63,20 @@ a {
 
 @media screen and (max-width: 560px){
     #wrapper.menuDisplayed #sidebar-wrapper {
+        height: 100%;
         width: 100vw;
-        height: 100vh;
+        position: fixed;
+        z-index: 3;
+        opacity: 0.9;
+    }
+
+    #wrapper.menuDisplayed #page-content-wrapper {
+        padding-left: 0px;
+    }
+    
+
+    .sidebar-nav{
+        top: 100px;
     }
 }
 
@@ -96,6 +111,7 @@ a {
 /* sec-header styling */
 
 .sec-header {
+    padding-left: 5px;
     font-weight: 500;
     position: relative;
     color: #cc0000;
@@ -144,13 +160,20 @@ a {
         color:white;
     }
 
+    .home h3 {
+        font-family:'Bahnschrift, Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white
+    }
+
     .home p {
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
         font-size: 1.20rem;
         font-weight: 500;
         letter-spacing: .2px;
-        line-height: 1.8;
         margin: 0 20% 0 20%;
         color: white;
+        border-left: 2px solid white;
+        padding-left: 10px;
     }
 
     .home a {
@@ -315,16 +338,26 @@ a {
     color: white;
 }
 
+.contact h1 {
+    font-family: 'Californian FB', serif;
+    font-size: 3.0rem;
+    font-weight: 600;
+    line-height: 1.1;
+    text-transform: capitalize;
+    margin: 0 auto;
+}
 
 .contact h3 {
+    font-family:'Bahnschrift, Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
     color: #d41a49;
-    font-weight: 550;
+    font-weight: 500;
 }
 
 .contact p {
-    font-size: 1.0rem;
+    font-size: 1.20rem;
     font-weight: 500;
-    margin: 0 auto;
-    color: white;
+    letter-spacing: .2px;
+    line-height: 1.8;
+    margin: 10 auto;
 }

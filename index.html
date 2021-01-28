@@ -31,6 +31,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
+    <!-- typed js  -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
     <!-- main script -->
 	<script type="application/x-javascript" src="js/app.js"></script>
 	
@@ -89,7 +92,11 @@
                     <div class="col-12">
                         <!-- about me -->
                         <h1>Hello, <br> I'm Debopriya </h1>
-                        <p>I learned that design matters – because we are human and we often enter into problems.My vision is to empower people with easy and productive solutions to get the best out of them.</p>
+                        <p>
+                            I am a <span id="typed" style="color: #cc0000"></span> from India.
+                            <br>
+                            Learning new skills and Technologies with every passing minute.                         
+                        </p>
                         <br />
                         <!-- social media links -->
                         <div id="myBottomLink" class="text-left pb-3">
@@ -113,14 +120,29 @@
 
         </div>
     </div><!-- header ends -->
+
+    <script>
+        var typed = new Typed('#typed', {
+            strings: [
+                "Web Developer",
+                "Competetive Coder",
+                "Sketch Artist",
+                "Tech Blogger"
+            ],
+            typeSpeed: 70,
+            backSpeed: 50,
+            loop: true,
+        });
+    </script>
+
     <!--MY PROJECTS-->
     <section class="projects" id="projects">
         <h2 class="text-center sec-header mt-4 pt-5 pb-2"> MY PROJECTS </h2>
         <div class="row m-5 justify-content-center">
 
             <!-- proj 1 -->
-            <div class="card mb-3 mx-3" style="max-width: 500px; min-width: 340px;">
-                <div class="row no-gutters">
+            <div class="card mb-3 mx-3" style="max-width: 500px; min-width: 340px; align-self: center;">
+                <div class="row no-gutters" style="align-items: center;">
                     <div class="col-md-4">
                         <img src="./img/proj1.png" class="card-img" alt="...">
                     </div>
@@ -136,15 +158,16 @@
             </div>
 
             <!-- proj 2 -->
-            <div class="card mb-3 mx-3" style="max-width: 500px; min-width: 340px;">
-                <div class="row no-gutters">
+            <div class="card mb-3 mx-3" style="max-width: 500px; min-width: 340px; align-self: center;">
+                <div class="row no-gutters" style="align-items: center;">
                     <div class="col-md-4">
                         <img src="./img/proj3.png" class="card-img" alt="...">
                     </div>
                     <div class="col-md-8" style="align-self: center;">
                         <div class="card-body">
                             <h5 class="card-title">Personal Portfolio Website</h5>
-                            <p class="card-text">This is a website that showcases my work and professional information. 
+                            <p class="card-text">The Project consists of a Portfolio site that showcases my work and professional information.
+                                The site is fully responsive.
                             Tools used :- <i>HTML, CSS, Javascript</i> and <i>Bootstrap 4</i></p>
                             <p class="card-text"><small class="text-muted"><a href="https://debopriyadey.github.io" target="_blank">View Project</a></small></p>
                         </div>
@@ -153,8 +176,8 @@
             </div>
 
             <!-- proj 3 -->
-            <div class="card mb-3 mx-3" style="max-width: 500px; min-width: 340px;">
-                <div class="row no-gutters">
+            <div class="card mb-3 mx-3" style="max-width: 500px; min-width: 340px; align-self: center;">
+                <div class="row no-gutters" style="align-items: center;">
                     <div class="col-md-4">
                         <img src="./img/proj2.png" class="card-img" alt="...">
                     </div>
@@ -170,8 +193,8 @@
             </div>
 
             <!-- proj 4 -->
-            <div class="card mb-3 mx-3" style="max-width: 500px; min-width: 340px;">
-                <div class="row no-gutters">
+            <div class="card mb-3 mx-3" style="max-width: 500px; min-width: 340px; align-self: center;">
+                <div class="row no-gutters" style="align-items: center;">
                     <div class="col-md-4">
                         <img src="./img/proj4.png" class="card-img" alt="...">
                     </div>
@@ -234,8 +257,12 @@
                 <div class="col-md-12 mx-auto my-5 white-text text-center">
                     <h1>Let's Work Together </h1>
                     <h3 class="pt-2" style="color: black;">
-                        I learned that design matters – because we are human and we often enter into problems.
-                        My vision is to empower people with easy and productive solutions to get the best out of them.
+                        I love to work in team and already done that previosly. I love to intract with 
+                        people and learn from them and share my knowledge as well.
+                        I would love to showcase my skills working in your organization
+                        and would try to make your organization grow.
+                        I am open to interships and startups as a web designer or developer.
+                        also looking forward for organizations which can use my programing skills in pythons and c++.
                     </h3>
                     <br />
                     <h3> <i class="far fa-address-card"></i> Mailing Address </h3>
@@ -294,14 +321,14 @@
     <!-- find me ends -->
     <!-- back-to-top button -->
 
-    <iframe 
+    <!--<iframe 
         src="https://docs.google.com/forms/d/e/1FAIpQLSdyfyvOfY-wTgqqsF31ml9YYcp1ODPJE58hUFkBGVT8hnbBPQ/viewform?embedded=true" 
         width="640" 
         height="943" 
         frameborder="0" 
         marginheight="0" 
         marginwidth="0">
-    </iframe>
+    </iframe>-->
     <a href="#header" class="back-to-top back-appear" style="float: right; color:grey;"><i class="fas fa-arrow-alt-circle-up fa-3x mx-4 mb-4"></i></a>
 
     <section class="footer" id="footer" style="background-color: black;">

@@ -12,6 +12,11 @@ a {
         color: inherit;
     }
 
+    .highlight {
+        color: #cc0000;
+    }
+    
+
 /* ---------- each section header style with underline ----------- */
 
 .sec-header {
@@ -104,6 +109,11 @@ a {
     right: 10px;
 }
 
+@media screen and (max-width: 680px){
+    .back-to-top {
+        visibility: hidden;
+    }
+}
 .back-appear {
     opacity: 0;
 }
@@ -115,6 +125,8 @@ a {
     background: linear-gradient(black, #007bff, white);
 
 }
+
+
 /* ---------- projects ends ------------ */
 
 /* ---------- blogs style ----------- */
@@ -148,9 +160,10 @@ a {
 }
 
 .contact h3 {
+    font-family:'Bahnschrift, Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
     color: #191824;
-    font-weight: 550;
+    font-weight: 500;
 }
 
 .contact p {
