@@ -88,7 +88,7 @@ a {
 
 /* ---------- topimage style ----------- */
 .topimage {
-    background-image: url("../img/cover.jpg");
+    background-image: url("../img/cover.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
